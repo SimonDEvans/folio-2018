@@ -1,13 +1,18 @@
 import React, { Component } from 'react'
 import './TestComponent.css'
-import Navigation from '../../components/Navigation/Navigation'
+import { Parallax } from 'react-scroll-parallax';
 
-class Masonry extends Component {
+class TestComponent extends Component {
   render() {
     return (
-      <div>Test Component</div>
+      <Parallax
+        className="test-component"
+        offsetYMax={-40}
+        offsetYMin={20}
+        >
+      </Parallax>
     )
   }
 }
 
-export default Masonry
+export default TestComponent
