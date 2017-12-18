@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 import { ParallaxProvider } from 'react-scroll-parallax';
-import Home from './components/Home/Home'
+import Base from './components/Base/Base'
 import NotFound from './components/NotFound/NotFound'
 import TestComponent from './components/TestComponent/TestComponent'
 
@@ -14,7 +14,7 @@ class App extends Component {
         <div className="app">
           <Router history={hashHistory}>
             <Route path='/' component={Container}>
-              <IndexRoute component={Home} />
+              <IndexRoute component={Base} />
               <Route path='test-component' component={TestComponent} />
               <Route path='*' component={NotFound} />
             </Route>
