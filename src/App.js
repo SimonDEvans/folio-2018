@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
+import { ParallaxProvider } from 'react-scroll-parallax';
 import Home from './components/Home/Home'
 import NotFound from './components/NotFound/NotFound'
 import TestComponent from './components/TestComponent/TestComponent'
-import { ParallaxProvider } from 'react-scroll-parallax';
 
 const Container = (props) => props.children
 

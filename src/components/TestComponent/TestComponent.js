@@ -7,8 +7,8 @@ class TestComponent extends Component {
     return (
       <Parallax
         className="test-component"
-        offsetYMax={-40}
-        offsetYMin={20}
+        offsetYMax={20}
+        offsetYMin={0}
         >
       </Parallax>
     )

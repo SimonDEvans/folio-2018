@@ -6,7 +6,7 @@ class Navigation extends Component {
   render() {
     return (
       <div className="navigation">
-        <Link to='/' className="navigation__link">Home</Link>
+        <Link to='/test-component'>Test Component</Link>
       </div>
     )
   }
