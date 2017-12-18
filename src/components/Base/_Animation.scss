@@ -1,25 +1,10 @@
-@keyframes fadeIn {
-  from { 
-    opacity: 0; 
-    transform: translate3d(0, 10px, 0);
-  }
-  to { 
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes slideIn {
-  from { 
-    opacity: 0; 
-    transform: translate3d(-10px, 0, 0);
-  }
-  to { 
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
 .animate-in {
-  animation: fadeIn 1000ms;
+  transition: all 500ms ease;
+  opacity: 0; 
+  transform: translate3d(0, 10px, 0);
+}
+
+.animate-in--show {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }

@@ -15,7 +15,9 @@ class Base extends Component {
     }
 
     let items = document.getElementById('base').querySelectorAll('.animate-in');  
-    animateIn(items, ' fade-in', 80);
+    setTimeout(function() {
+      animateIn(items, ' animate-in--show', 500);
+    }, 100)
   }
 
   render() {
