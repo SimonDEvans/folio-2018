@@ -3,9 +3,26 @@ import './Base.css'
 import Home from '../../components/Home/Home'
 
 class Base extends Component {
+  componentDidMount() {
+    function animateIn(el, className, timing) {
+      for (let i = 0; i < el.length; i++) {
+        (function (i) {
+          setTimeout(function () {
+            el[i].className += className
+          }, timing * i)
+        })(i)
+      }
+    }
+
+    let items = document.getElementById('base').querySelectorAll('.animate-in');  
+    animateIn(items, ' fade-in', 80);
+  }
+
   render() {
     return (
-      <Home />
+      <div id="base">
+        <Home />
+      </div>
     )
   }
 }

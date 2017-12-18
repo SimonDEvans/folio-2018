@@ -1,3 +1,8 @@
-@import 'Normalize.scss';
-@import 'Config.scss';
+@import 'Normalize';
+@import 'Variables';
+@import 'Animation';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Ruda:400,900');
 
+body {
+  background-color: #000;
+}
