@@ -14,15 +14,15 @@ class Base extends Component {
       }
     }
 
-    let items = document.getElementById('base').querySelectorAll('.animate-in');  
+    let items = document.getElementById('animate-base').querySelectorAll('.animate-in');  
     setTimeout(function() {
-      animateIn(items, ' animate-in--show', 500);
+      animateIn(items, ' animate-in--show', 200);
     }, 100)
   }
 
   render() {
     return (
-      <div id="base">
+      <div id="animate-base">
         <Home />
       </div>
     )
