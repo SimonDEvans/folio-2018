@@ -4,6 +4,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import Base from './components/Base/Base'
 import NotFound from './components/NotFound/NotFound'
 import TestComponent from './components/TestComponent/TestComponent'
+import About from './components/About/About'
 
 const Container = (props) => props.children
 
@@ -16,6 +17,7 @@ class App extends Component {
             <Route path='/' component={Container}>
               <IndexRoute component={Base} />
               <Route path='test-component' component={TestComponent} />
+              <Route path='about' component={About} />
               <Route path='*' component={NotFound} />
             </Route>
           </Router>

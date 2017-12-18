@@ -1,15 +1,24 @@
-@import '../Base/Config.scss';
+@import '../Base/Variables';
 
-.block,
-.block2 {
+.home {
   width: 100%;
-  height: 50vh;
-}
+  min-height: 100vh;
 
-.block {
-  background-color: #eee;
-}
+  &__introduction {
+    position: absolute;
+    bottom: 200px;
+    left: 200px;
+    color: #fff;
 
-.block2 {
-  background-color: #ccc;
+      h1 {
+        font-family: 'Ruda', sans-serif;
+        font-weight: 400;
+      }
+
+      h2 {
+        max-width: 500px;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 300;
+      }
+  }
 }
