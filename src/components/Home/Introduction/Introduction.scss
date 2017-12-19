@@ -1,0 +1,18 @@
+.introduction {
+  position: absolute;
+  bottom: 250px;
+  left: 200px;
+  color: #fff;
+  z-index: 1;
+
+  h1 {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 400;
+  }
+
+  h2 {
+    max-width: 500px;
+    font-family: 'Barlow', serif;
+    font-weight: 200;
+  }
+}

@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-import './Home.css'
+import './Introduction.css'
 
 class Introduction extends Component {
   render() {
     return (
-      <div className="home__introduction">
-        <h1 className="animate-in">Hello.</h1>
+      <div className="introduction">
+        <h1 className="animate-in">Dipsum sipsum</h1>
         <h2 className="animate-in">
           Lorem ipsum dolor sit amet.
         </h2>
         <h2 className="animate-in">
-          <Link to='/about'>Go to about page.</Link>
+          <Link to='/about'>Page link.</Link>
         </h2>
       </div>
     )

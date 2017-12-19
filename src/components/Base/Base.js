@@ -14,7 +14,7 @@ class Base extends Component {
       }
     }
 
-    let items = document.getElementById('animate-base').querySelectorAll('.animate-in');  
+    let items = document.getElementById('animate-base').querySelectorAll('.animate-in'); 
     setTimeout(function() {
       animateIn(items, ' animate-in--show', 200);
     }, 100)

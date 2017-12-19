@@ -3,22 +3,4 @@
 .home {
   width: 100%;
   min-height: 100vh;
-
-  &__introduction {
-    position: absolute;
-    bottom: 200px;
-    left: 200px;
-    color: #fff;
-
-      h1 {
-        font-family: 'Ruda', sans-serif;
-        font-weight: 400;
-      }
-
-      h2 {
-        max-width: 500px;
-        font-family: 'Roboto Slab', serif;
-        font-weight: 300;
-      }
-  }
 }

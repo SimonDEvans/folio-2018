@@ -1,10 +1,12 @@
 @import 'Normalize';
 @import 'Variables';
 @import 'Animation';
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Ruda:400,900');
+@import url('https://fonts.googleapis.com/css?family=Barlow:100,200,300,400|Ruda:400,900');
 
+html,
 body {
-  background-color: #000;
+  background-color: #09090F;
+  color: #fff;
 }
 
 a {
