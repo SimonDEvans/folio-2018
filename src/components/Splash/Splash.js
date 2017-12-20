@@ -19,11 +19,11 @@ class Splash extends Component {
     let canvasContext
 
     // distance of hill-set
-    let hillsetDistance = 1500
+    let hillsetDistance = 1000
 
     // width and height of canvas
-    let maxX = 1500
-    let maxY = 1500
+    let maxX = 1000
+    let maxY = 1000
 
     // higher = above
     let viewpoint = 230
@@ -67,7 +67,7 @@ class Splash extends Component {
     function hillsAndValleys() {
 
       // set canvas bg
-      canvasContext.fillStyle = "#09090F"
+      canvasContext.fillStyle = "#0D0D0D"
       canvasContext.fillRect(0, 0, maxX, maxY)
       marginBottom += 1
       marginLeft += 1
@@ -99,7 +99,7 @@ class Splash extends Component {
 
         // stroke colour 
         // canvasContext.strokeStyle = "hsla(" + (colourUpdate % 360) + ",100%,50%,1)"
-        canvasContext.strokeStyle = "rgba(255, 255, 255, 0.18)"
+        canvasContext.strokeStyle = "rgba(211, 211, 247, 0.2)"
         let firstPoint = true
 
         for (let creviceX = -edgeBoundary; creviceX <= creviceCount + edgeBoundary; creviceX++) {
@@ -139,7 +139,7 @@ class Splash extends Component {
 
   render() {
     return (
-      <canvas className="canvas" id="canvas" width={1500} height={1500} />
+      <canvas className="canvas" id="canvas" width={1000} height={1000} />
     )
   }
 }

@@ -1,11 +1,11 @@
-@import 'Normalize';
-@import 'Variables';
-@import 'Animation';
-@import url('https://fonts.googleapis.com/css?family=Barlow:100,200,300,400|Ruda:400,900|Karla:400,700');
+@import 'config/normalize';
+@import 'config/variables';
+@import 'config/animation';
+@import 'config/fonts';
 
 html,
 body {
-  background-color: #09090F;
+  background-color: $background-colour;
   color: #fff;
 }
 
@@ -15,37 +15,9 @@ a {
 
 .base {
   position: relative;
+  padding: 0 50px;
+}
 
-  &::before,
-  &::after {
-    // content: '';
-    position: fixed;
-    top: 0;
-    width: 50px;
-    height: 100vh;
-    z-index: 1;
-    background-color: #09090E;
-    opacity: 0;
-    transition: transform 1s cubic-bezier(0.23,1,0.32,1), opacity 0.5s cubic-bezier(0.165,0.84,0.44,1);
-  }
-
-  &::before {
-    left: 0;
-    border-right: 1px solid #292929;
-    transform: translateX(-100%);
-  }
-
-  &::after {
-    right: 0;
-    border-left: 1px solid #292929;
-    transform: translateX(100%);
-  }
-
-  &--show {
-    &::before,
-    &::after {
-      opacity: 0.7;
-      transform: translateX(0);
-    }
-  }
+.app {
+  overflow: hidden;
 }

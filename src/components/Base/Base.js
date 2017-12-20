@@ -16,15 +16,12 @@ class Base extends Component {
 
     let items = document.getElementById('animate-base').querySelectorAll('.animate-in')
     let UIitems = document.getElementById('animate-base').querySelectorAll('.animate-in-ui')
-    let sidebars = document.getElementById('animate-base')
+    
     setTimeout(function() {
       animateIn(items, ' animate-in--show', 200);
       animateIn(UIitems, ' animate-in-ui--show', 200);
     }, 100)
 
-    setTimeout(function() {
-      sidebars.className += ' base--show'
-    }, 1500)
   }
 
   render() {
