@@ -132,9 +132,9 @@ class Splash extends Component {
 
     window.requestAnimFrame(drawCanvas)
 
-    setTimeout(function() {
+    // setTimeout(function() {
       document.getElementById('canvas').className += ' canvas--show'
-    }, 500)
+    // }, 500)
   }
 
   render() {

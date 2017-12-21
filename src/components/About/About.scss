@@ -1,4 +1,4 @@
-@import '../Base/Config/variables';
+@import '../../app/config/variables';
 
 .about {
   width: 100%;
@@ -8,5 +8,6 @@
   h1 {
     color: #fff;
     font-weight: 300;
+    font-family: $font--body;
   }
 }

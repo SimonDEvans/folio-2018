@@ -1,0 +1,33 @@
+import React, { Component } from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { ParallaxProvider } from 'react-scroll-parallax'
+import './App.css'
+import Home from '../components/Home/Home'
+import Error404 from '../components/Error404/Error404'
+import About from '../components/About/About'
+import Navigation from '../components/Navigation/Navigation'
+import TestComponent from '../components/TestComponent/TestComponent'
+
+class App extends Component {
+  render() {
+    return (
+      <ParallaxProvider>
+        <div className="app animate-base">
+          <Router>
+            <div>
+              <Navigation />
+              <Switch>
+                <Route exact path="/" component={Home}/>
+                <Route path="/about" component={About}/>
+                <Route path="/work" component={TestComponent}/>
+                <Route component={Error404} />
+              </Switch>
+            </div>
+          </Router>
+        </div>
+      </ParallaxProvider>
+    );
+  }
+}
+
+export default App

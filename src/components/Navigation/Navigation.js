@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router'
+import { NavLink } from 'react-router-dom'
 import './Navigation.css'
 
 class Navigation extends Component {
   render() {
     return (
-      <div className="navigation">
-        <Link to='/test-component'>Test Component</Link>
-      </div>
+      <nav className="navigation" id="navigation">
+        <NavLink exact to="/" className="navigation__item" activeClassName="navigation__item--active">Home</NavLink>
+        <NavLink to="/about" className="navigation__item" activeClassName="navigation__item--active">About</NavLink>
+        <NavLink to="/work" className="navigation__item" activeClassName="navigation__item--active">Work</NavLink>
+        <NavLink to="/playground" className="navigation__item" activeClassName="navigation__item--active">Play</NavLink>
+      </nav>
     )
   }
 }
