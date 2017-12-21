@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import './Home.css'
-import Splash from '../Splash/Splash'
-import Social from '../Social/Social'
-import Playground from '../Playground/Playground'
-import Menu from '../Menu/Menu'
+import Splash from './Splash/Splash'
+import Social from './Social/Social'
+import Playground from './Playground/Playground'
+import Menu from './Menu/Menu'
 
 class Home extends Component {
   componentDidMount() {
