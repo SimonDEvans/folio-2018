@@ -1,0 +1,26 @@
+@import '../../app/config/variables';
+
+.social {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  z-index: 1;
+
+  &__icon {
+    list-style-type: none;
+    margin-right: 15px;
+    display: inline-block;
+
+    svg {
+      width: 15px;
+      fill: $off-white;
+      transition: fill 500ms ease;
+    }
+
+    &:hover {
+      svg {
+        fill: $off-white-hover;
+      }
+    }
+  }
+}

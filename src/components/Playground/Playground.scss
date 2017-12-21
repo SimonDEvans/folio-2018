@@ -1,0 +1,20 @@
+@import '../../app/config/variables';
+
+.playground-link {
+  position: absolute;
+  bottom: 47px;
+  right: 50px;
+  z-index: 1;
+
+  svg {
+    width: 20px;
+    fill: $off-white;
+    transition: fill 500ms ease;
+  }
+
+  &:hover {
+    svg {
+      fill: $off-white-hover;
+    }
+  }
+}

@@ -3,4 +3,25 @@
 .home {
   width: 100%;
   min-height: 100vh;
+
+  h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 45%;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-weight: 300;
+    text-align: center;
+    z-index: 1;
+    color: $off-white-hover;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 300ms ease, opacity 1700ms ease;
+
+    &.show {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 }
