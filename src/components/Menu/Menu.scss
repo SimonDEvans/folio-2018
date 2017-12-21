@@ -3,8 +3,8 @@
 .menu-link {
   $root: &;
   position: absolute;
-  top: 50px;
-  right: 50px;
+  top: 25px;
+  right: 25px;
   z-index: 1;
   padding: 0;
   width: 28px;
@@ -12,6 +12,11 @@
   background: transparent;
   border: 0;
   cursor: pointer;
+
+  @include media-query(xs) {
+    top: 50px;
+    right: 50px;
+  }
 
   &:hover {
     #{$root}__wrapper {
@@ -21,7 +26,7 @@
     }
   }
 
-  &:hover
+  &:hover {
     #{$root}__wrapper {
       div {
         &:nth-child(1) {

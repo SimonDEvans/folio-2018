@@ -2,9 +2,14 @@
 
 .playground-link {
   position: absolute;
-  bottom: 47px;
-  right: 50px;
+  bottom: 23px;
+  right: 25px;
   z-index: 1;
+
+  @include media-query(xs) {
+    bottom: 47px;
+    right: 50px;
+  }
 
   svg {
     width: 20px;
