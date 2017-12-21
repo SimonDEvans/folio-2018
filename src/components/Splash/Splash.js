@@ -26,16 +26,16 @@ class Splash extends Component {
     let maxY = 1000
 
     // higher = above
-    let viewpoint = 230
+    let viewpoint = 30
 
     let halfWidth = maxX / 2
     let halfHeight = maxY / 2
     let marginLeft = 0
-    let marginTop = -10.0
+    let marginTop = 0
     let marginBottom = 0
 
     // color update
-    // let colourUpdate = 0
+    let colourUpdate = 0
 
     function drawCanvas() {
       canvasElement = document.getElementById('canvas')
@@ -60,7 +60,7 @@ class Splash extends Component {
 
     // control height and length of peaks
     function noise(x, y) {
-      return (Math.sin(y * 0.172) + Math.sin((x + (y * 0.347)) * 0.2)) * 2.55
+      return (Math.sin(y * 0.172) + Math.sin((x + (y * 0.347)) * 0.2)) * 2
     }
 
     // make hills & valleys
@@ -73,7 +73,7 @@ class Splash extends Component {
       marginLeft += 1
 
       // increment color value
-      // colourUpdate -= 0.5
+      colourUpdate -= 0.5
 
       // line width
       canvasContext.lineWidth = .22
@@ -98,8 +98,9 @@ class Splash extends Component {
         let creviceLineVisibility = false
 
         // stroke colour 
-        // canvasContext.strokeStyle = "hsla(" + (colourUpdate % 360) + ",100%,50%,1)"
-        canvasContext.strokeStyle = "rgba(211, 211, 247, 0.2)"
+        canvasContext.strokeStyle = "hsla(" + (colourUpdate % 360) + ",100%,50%,0.2)"
+        // canvasContext.strokeStyle = "rgba(211, 211, 247, 0.15)"
+        // canvasContext.strokeStyle = "rgba(255, 255, 255, 0.15)"
         let firstPoint = true
 
         for (let creviceX = -edgeBoundary; creviceX <= creviceCount + edgeBoundary; creviceX++) {
@@ -132,9 +133,9 @@ class Splash extends Component {
 
     window.requestAnimFrame(drawCanvas)
 
-    // setTimeout(function() {
+    setTimeout(function() {
       document.getElementById('canvas').className += ' canvas--show'
-    // }, 500)
+    }, 500)
   }
 
   render() {
