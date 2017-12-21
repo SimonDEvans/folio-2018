@@ -98,7 +98,7 @@ class Splash extends Component {
         let creviceLineVisibility = false
 
         // stroke colour 
-        canvasContext.strokeStyle = "hsla(" + (colourUpdate % 360) + ",100%,50%,0.2)"
+        canvasContext.strokeStyle = "hsla(" + (colourUpdate % 360) + ",100%,50%,1)"
         // canvasContext.strokeStyle = "rgba(211, 211, 247, 0.15)"
         // canvasContext.strokeStyle = "rgba(255, 255, 255, 0.15)"
         let firstPoint = true
