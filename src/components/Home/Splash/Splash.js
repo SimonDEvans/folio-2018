@@ -29,12 +29,12 @@ class Splash extends Component {
     let maxY = windowWidth
 
     // higher = above
-    let viewpoint = 30
+    let viewpoint = 20
 
     let halfWidth = maxX / 2
     let halfHeight = maxY / 2
     let marginLeft = 0
-    let marginTop = 0
+    let marginTop = -5
     let marginBottom = 0
 
     // color update

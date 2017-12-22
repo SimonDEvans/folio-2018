@@ -5,7 +5,6 @@ import './App.css'
 import Home from '../components/Home/Home'
 import Error404 from '../components/Error404/Error404'
 import About from '../components/About/About'
-import TestComponent from '../components/TestComponent/TestComponent'
 
 class App extends Component {
   render() {
@@ -19,7 +18,6 @@ class App extends Component {
                 <Route exact path="/#/" component={Home}/>
                 <Route exact path="" component={Home}/>
                 <Route path="/about" component={About}/>
-                <Route path="/work" component={TestComponent}/>
                 <Route component={Error404} />
               </Switch>
             </div>
