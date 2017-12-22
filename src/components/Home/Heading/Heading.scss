@@ -1,0 +1,69 @@
+@import '../../../app/config/variables';
+
+$tilt-width: 80vw;
+$tilt-height: 100vh;
+
+.heading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 300ms ease, opacity 1700ms ease;
+  width: $tilt-width;
+  height: $tilt-height;
+
+  @include media-query(s) {
+    width: $tilt-width;
+    height: $tilt-height;
+  }
+
+  &--show {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  &__text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 28px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: $font--body;
+    letter-spacing: 6px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    color: $off-white-hover;
+
+    @include media-query(s) {
+      height: 34px;
+      font-size: 80px;
+      letter-spacing: 15px;
+      line-height: 0.7;
+      font-weight: 700;
+    }
+  }
+
+  &__tilt {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    @include media-query(s) {
+      width: 550px;
+      height: 335px;
+      width: $tilt-width;
+      height: $tilt-height;
+    }
+  }
+}

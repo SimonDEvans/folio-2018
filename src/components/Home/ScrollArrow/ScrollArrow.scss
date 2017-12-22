@@ -1,0 +1,80 @@
+@import '../../../app/config/variables';
+
+.scroll-arrow-container {
+  position: absolute;
+  bottom: 100px;
+  z-index: 5;
+  width: 100%;
+
+  @include media-query(s) {
+    bottom: auto;
+    left: 50px;
+    top: calc(100vh - 77px);
+    width: auto;
+  }
+
+  .scroll-arrow {  
+    width: 30px;
+    height: 46px;
+    cursor: pointer;
+    opacity: 0;
+    margin: auto;
+    transform: translateY(20px);
+    transition: margin 300ms ease, height 300ms ease, opacity 500ms ease, transform 700ms ease;
+
+    @include media-query(s) {
+      margin: 0;
+    }
+
+    &--show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0px;
+      width: 1px;
+      height: 46px;
+      background-color: $off-white;
+      transition: height 300ms ease, background-color 300ms ease;
+
+      &::before {
+        content: '';
+        width: 6px;
+        height: 1px;
+        background-color: $off-white;
+        position: absolute;
+        bottom: 2px;
+        right: 0px;
+        transform: rotate(40deg);
+      }
+
+      &::after {
+        content: '';
+        width: 6px;
+        height: 1px;
+        background-color: $off-white;
+        position: absolute;
+        bottom: 2px;
+        left: 0px;
+        transform: rotate(-40deg);
+      }
+    }
+
+    &:hover {
+      height: 55px;
+
+      span {
+        height: 55px;
+        background-color: $off-white-hover;
+
+        &::before,
+        &::after {
+          background-color: $off-white-hover;
+        }
+      }
+    }
+  }
+}

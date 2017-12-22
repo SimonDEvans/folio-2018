@@ -1,74 +1,7 @@
 @import '../../app/config/variables';
 
-$tilt-width: 60vw;
-$tilt-height: 60vh;
-
 .home {
+  position: relative;
   width: 100%;
   min-height: 100vh;
-
-  &__heading {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: 1;
-    transform: scale(0);
-    opacity: 0;
-    transition: transform 300ms ease, opacity 1700ms ease;
-
-    @include media-query(s) {
-      width: 550px;
-      height: 335px;
-      width: 60vw;
-      height: 60vh;
-    }
-
-    &--show {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-
-  &__heading-text {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 28px;
-    width: 100%;
-    font-size: 25px;
-    font-weight: 300;
-    font-family: $font--body;
-    letter-spacing: 6px;
-    line-height: 1;
-    text-transform: uppercase;
-    text-align: center;
-    color: $off-white-hover;
-
-    @include media-query(s) {
-      height: 34px;
-      font-size: 32px;
-      letter-spacing: 15px;
-      line-height: 0.7;
-    }
-  }
-
-  &__heading-tilt {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-
-    @include media-query(s) {
-      width: 550px;
-      height: 335px;
-      width: 60vw;
-      height: 60vh;
-    }
-  }
 }
