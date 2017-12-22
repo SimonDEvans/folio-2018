@@ -2,8 +2,8 @@
   "short_name": "simon-evans-portfolio",
   "name": "Simon Evans Portfolio",
   "start_url": "https://sii.im/playground/portfolio-2018/#/",
-  "background_color": "#000",
-  "theme_color": "#000",
+  "background_color": "#0D0D0D",
+  "theme_color": "#0D0D0D",
   "icons": [
     {
       "src": "favicon/favicon-512.png",
