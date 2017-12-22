@@ -135,19 +135,16 @@ class Splash extends Component {
     }
 
     window.requestAnimFrame(drawCanvas)
-
-    setTimeout(function() {
+    
+    setTimeout(() => {
       document.getElementById('canvas').className += ' canvas--show'
     }, 500)
   }
 
   render() {
-    let windowWidth = window.innerWidth
-    let windowHeight = window.innerHeight
-
     return (
       <div className="canvas-wrapper">
-        <canvas className="canvas" id="canvas" width={windowWidth} height={windowHeight} />
+        <canvas className="canvas" id="canvas" width={window.innerWidth} height={window.innerHeight} />
       </div>
     )
   }

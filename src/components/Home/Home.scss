@@ -1,5 +1,8 @@
 @import '../../app/config/variables';
 
+$tilt-width: 60vw;
+$tilt-height: 60vh;
+
 .home {
   width: 100%;
   min-height: 100vh;
@@ -17,8 +20,10 @@
     transition: transform 300ms ease, opacity 1700ms ease;
 
     @include media-query(s) {
-      height: 335px;
       width: 550px;
+      height: 335px;
+      width: 60vw;
+      height: 60vh;
     }
 
     &--show {
@@ -62,6 +67,8 @@
     @include media-query(s) {
       width: 550px;
       height: 335px;
+      width: 60vw;
+      height: 60vh;
     }
   }
 }
