@@ -3,17 +3,17 @@
 .social {
   position: absolute;
   bottom: 25px;
-  left: 25px;
+  right: 25px;
   z-index: 1;
 
   @include media-query(xs) {
     bottom: 50px;
-    left: 50px;
+    right: 50px;
   }
 
   &__icon {
     list-style-type: none;
-    margin-right: 15px;
+    margin-left: 15px;
     display: inline-block;
 
     svg {

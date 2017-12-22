@@ -3,8 +3,10 @@
 .menu-link {
   $root: &;
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 25px;
   z-index: 1;
   padding: 0;
   width: 28px;
@@ -14,21 +16,18 @@
   cursor: pointer;
 
   @include media-query(xs) {
-    top: 50px;
-    right: 50px;
+    left: 50px;
   }
 
   &:hover {
+    #{$root}__label {
+      color: $off-white-hover;
+    }
+
     #{$root}__wrapper {
       div {
         background-color: $off-white-hover;
-      }
-    }
-  }
 
-  &:hover {
-    #{$root}__wrapper {
-      div {
         &:nth-child(1) {
           width: 40%;
         }
@@ -48,6 +47,21 @@
     }
   }
 
+  &:focus {
+    outline: 0;
+  }
+
+  &__label {
+    text-transform: uppercase;
+    color: #9c9c9c;
+    position: absolute;
+    left: 54px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    top: 1px;
+    transition: color 500ms ease;
+  }
+
   &__wrapper {
     position: relative;
     width: 100%;
@@ -55,7 +69,7 @@
 
     div {
       position: absolute;
-      right: 0;
+      left: 0;
       height: 1px;
       background-color: $off-white;
       transition: width 300ms ease, background-color 500ms ease;

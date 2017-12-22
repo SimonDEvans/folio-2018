@@ -18,15 +18,18 @@ class Splash extends Component {
     let canvasElement
     let canvasContext
 
+    // window size
+    let windowWidth = window.innerWidth;
+
     // distance of hill-set
-    let hillsetDistance = 1000
+    let hillsetDistance = windowWidth
 
     // width and height of canvas
-    let maxX = 1000
-    let maxY = 1000
+    let maxX = windowWidth
+    let maxY = windowWidth
 
     // higher = above
-    let viewpoint = 30
+    let viewpoint = 25
 
     let halfWidth = maxX / 2
     let halfHeight = maxY / 2
@@ -139,8 +142,13 @@ class Splash extends Component {
   }
 
   render() {
+    let windowWidth = window.innerWidth
+    let windowHeight = window.innerHeight
+
     return (
-      <canvas className="canvas" id="canvas" width={1000} height={1000} />
+      <div className="canvas-wrapper">
+        <canvas className="canvas" id="canvas" width={windowWidth} height={windowHeight} />
+      </div>
     )
   }
 }

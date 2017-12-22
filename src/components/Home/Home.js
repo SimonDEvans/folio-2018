@@ -18,7 +18,6 @@ class Home extends Component {
         <h1 id="strapline">Simon Evans</h1>
         <Splash />
         <Social />
-        <Playground />
         <Menu />
       </div>
     )

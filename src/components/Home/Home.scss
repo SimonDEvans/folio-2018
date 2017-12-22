@@ -22,7 +22,7 @@
     transition: transform 300ms ease, opacity 1700ms ease;
 
     @include media-query(xs) {
-      top: 44%;
+      top: 45%;
       font-size: 32px;
       letter-spacing: 15px;
     }
