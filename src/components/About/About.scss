@@ -1,13 +1,8 @@
 @import '../../app/config/variables';
+@import '../../app/config/article';
 
 .about {
   width: 100%;
   height: 100vh;
   padding: 50px;
-
-  h1 {
-    color: #fff;
-    font-weight: 300;
-    font-family: $font--body;
-  }
 }
