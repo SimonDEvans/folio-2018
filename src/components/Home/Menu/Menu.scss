@@ -3,8 +3,7 @@
 .menu-link {
   $root: &;
   position: absolute;
-  top: 0;
-  bottom: 0;
+  bottom: 25px;
   margin: auto;
   left: 25px;
   z-index: 1;
@@ -15,7 +14,9 @@
   border: 0;
   cursor: pointer;
 
-  @include media-query(xs) {
+  @include media-query(s) {
+    top: 0;
+    bottom: 0;
     left: 50px;
   }
 
@@ -59,7 +60,12 @@
     font-size: 14px;
     letter-spacing: 2px;
     top: 1px;
-    transition: color 500ms ease;
+    opacity: 0;
+    transition: opacity 500ms ease, color 500ms ease;
+
+    @include media-query(s) {
+      opacity: 1;
+    }
   }
 
   &__wrapper {

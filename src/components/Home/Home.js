@@ -1,21 +1,26 @@
 import React, { Component } from 'react'
+import Tilt from 'react-tilt'
 import './Home.css'
 import Splash from './Splash/Splash'
 import Social from './Social/Social'
-import Playground from './Playground/Playground'
 import Menu from './Menu/Menu'
 
 class Home extends Component {
   componentDidMount() {
     setTimeout(function() {
-      document.getElementById('strapline').className += 'show'
+      document.getElementById('home-heading').className += ' home__heading--show'
     }, 100)
   }
 
   render() {
     return (
       <div className="home">
-        <h1 id="strapline">Simon Evans</h1>
+        <div className="home__heading" id="home-heading">
+          <Tilt className="home__heading-tilt Tilt" options={{ max : 25, speed: 700, perspective: 500 }}>
+            <h1 className="home__heading-text Tilt-inner">Simon Evans</h1>
+          </Tilt>
+        </div>
+
         <Splash />
         <Social />
         <Menu />

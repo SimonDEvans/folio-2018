@@ -29,7 +29,7 @@ class Splash extends Component {
     let maxY = windowWidth
 
     // higher = above
-    let viewpoint = 25
+    let viewpoint = 30
 
     let halfWidth = maxX / 2
     let halfHeight = maxY / 2

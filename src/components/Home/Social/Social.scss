@@ -6,7 +6,7 @@
   right: 25px;
   z-index: 1;
 
-  @include media-query(xs) {
+  @include media-query(s) {
     bottom: 50px;
     right: 50px;
   }
