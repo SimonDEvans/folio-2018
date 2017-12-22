@@ -10,10 +10,6 @@
   transition: all 3500ms ease;
   
   &--show {
-    opacity: 0.3;
-
-    @include media-query(xs) {
-      opacity: 0.2;
-    }
+    opacity: 0.4;
   }
 }
