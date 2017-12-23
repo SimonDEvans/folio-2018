@@ -10,9 +10,9 @@ $tilt-height: 100vh;
   right: 0;
   margin: auto;
   z-index: 1;
-  transform: scale(0);
+  transform: scale(0.7);
   opacity: 0;
-  transition: transform 300ms ease, opacity 1700ms ease;
+  transition: transform 1000ms ease, opacity 1700ms ease;
   width: $tilt-width;
   height: $tilt-height;
 

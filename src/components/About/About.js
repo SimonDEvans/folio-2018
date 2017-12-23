@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
 import './About.css'
+import Waypoint from 'react-waypoint';
 
 class About extends Component {
   render() {
     return (
-      <div className="about">
+      <div className="about" id="about">
+        <Waypoint 
+          onEnter={() => {
+            document.getElementById('about').className += ' about--show'
+          }}
+        />
         <article className="article">
           <h1>Front-end/UI Developer based in Bristol, UK.</h1>
           <p>I produce elegant, performant, and accessible digital experiences.</p>

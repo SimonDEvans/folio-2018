@@ -5,4 +5,12 @@
   width: 100%;
   height: 100vh;
   padding: 50px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 1000ms ease, opacity 1000ms ease;
+
+  &--show {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
