@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './About.css'
-import Waypoint from 'react-waypoint';
+import Waypoint from 'react-waypoint'
 
 class About extends Component {
   render() {

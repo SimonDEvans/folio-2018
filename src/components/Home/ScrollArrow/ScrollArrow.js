@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './ScrollArrow.css'
-import { Parallax } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax'
+import Scrollchor from 'react-scrollchor'
 
 class ScrollArrow extends Component {
   componentDidMount() {
@@ -12,9 +13,9 @@ class ScrollArrow extends Component {
   render() {
     return (
       <Parallax className="scroll-arrow-container" offsetYMin={-1500}>
-        <div id="scroll-arrow" className="scroll-arrow">
+        <Scrollchor to="#about" animate={{offset: -100, duration: 800}} id="scroll-arrow" className="scroll-arrow">
           <span></span>
-        </div>
+        </Scrollchor>
       </Parallax>
     )
   }
