@@ -3,6 +3,12 @@
 @import 'config/animation';
 @import 'config/fonts';
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html,
 body {
   background-color: $background-colour;
