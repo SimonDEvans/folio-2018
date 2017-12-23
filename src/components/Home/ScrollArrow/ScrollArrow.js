@@ -11,7 +11,7 @@ class ScrollArrow extends Component {
 
   render() {
     return (
-      <Parallax className="scroll-arrow-container" offsetYMin={-600}>
+      <Parallax className="scroll-arrow-container" offsetYMin={-1500}>
         <div id="scroll-arrow" className="scroll-arrow">
           <span></span>
         </div>

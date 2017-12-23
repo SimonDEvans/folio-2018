@@ -7,9 +7,8 @@ class About extends Component {
     return (
       <div className="about" id="about">
         <Waypoint 
-          onEnter={() => {
-            document.getElementById('about').className += ' about--show'
-          }}
+          onEnter={() => { document.getElementById('about').className += ' about--show' }}
+          onLeave={() => { document.getElementById('about').className = 'about' }}
         />
         <article className="article">
           <h1>Front-end/UI Developer based in Bristol, UK.</h1>
