@@ -92,8 +92,6 @@ class Splash extends Component {
       let array2d = [0, 0]
 
       // z axis crevice loop 
-      // for z crevices = 100 >=10 decrease them (forward movement effect)
-      // for (let zCrevices = 100 zCrevices >= 10 zCrevices--) {
       for (let zCrevices = 50; zCrevices >= 10; zCrevices--) {
         canvasContext.beginPath()
         let edgeBoundary = zCrevices * 1.25
@@ -102,8 +100,6 @@ class Splash extends Component {
 
         // stroke colour 
         canvasContext.strokeStyle = "hsla(" + (colourUpdate % 360) + ",100%,50%,1)"
-        // canvasContext.strokeStyle = "rgba(211, 211, 247, 0.15)"
-        // canvasContext.strokeStyle = "rgba(255, 255, 255, 0.15)"
         let firstPoint = true
 
         for (let creviceX = -edgeBoundary; creviceX <= creviceCount + edgeBoundary; creviceX++) {
