@@ -1,6 +1,6 @@
 @import '../../../app/config/variables';
 
-$tilt-width: 100vw;
+$tilt-width: 90vw;
 $tilt-height: 100vh;
 
 .heading {
@@ -9,7 +9,7 @@ $tilt-height: 100vh;
   left: 0;
   right: 0;
   margin: auto;
-  z-index: 1;
+  z-index: 2;
   transform: scale(0.7);
   opacity: 0;
   transition: transform 1000ms ease, opacity 1700ms ease;

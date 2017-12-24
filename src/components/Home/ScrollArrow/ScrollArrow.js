@@ -6,7 +6,7 @@ import Scrollchor from 'react-scrollchor'
 class ScrollArrow extends Component {
   render() {
     return (
-      <Parallax className="scroll-arrow-container" offsetYMin={-2000}>
+      <Parallax className="scroll-arrow-container" offsetYMin={-4000}>
         <Scrollchor to="#about" animate={{offset: -200, duration: 800}} className="c-scroll-icon">
           <div className="c-scroll-icon-line-mask"><div className="c-scroll-icon-line"></div></div>
           <div className="c-scroll-icon-triangle">

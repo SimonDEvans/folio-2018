@@ -19,7 +19,7 @@
     svg {
       width: 15px;
       fill: $off-white;
-      transition: fill 500ms ease;
+      transition: fill $transition-default ease;
     }
 
     &:hover {

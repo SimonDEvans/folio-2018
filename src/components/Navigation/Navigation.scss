@@ -15,7 +15,7 @@
     display: block;
     text-transform: uppercase;
     margin-bottom: 11px;
-    transition: color 300ms ease;
+    transition: color $transition-default ease;
 
     &:hover,
     &--active {

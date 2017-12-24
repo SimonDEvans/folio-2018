@@ -7,7 +7,7 @@
   padding: 25px;
   opacity: 0;
   transform: translateY(50px);
-  transition: transform 500ms ease, opacity 500ms ease;
+  transition: transform $transition-default ease, opacity $transition-default ease;
   transition-delay: 200ms;
 
   @include media-query(s) {
