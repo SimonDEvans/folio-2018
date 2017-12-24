@@ -1,11 +1,11 @@
 @import '../../../app/config/variables';
 
-$tilt-width: 80vw;
+$tilt-width: 100vw;
 $tilt-height: 100vh;
 
 .heading {
   position: absolute;
-  top: 0;
+  top: -20px;
   left: 0;
   right: 0;
   margin: auto;
@@ -30,9 +30,10 @@ $tilt-height: 100vh;
     position: absolute;
     top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
     height: 28px;
-    width: 100%;
     font-size: 25px;
     font-weight: 500;
     font-family: $font--body;
@@ -48,6 +49,27 @@ $tilt-height: 100vh;
       letter-spacing: 15px;
       line-height: 0.7;
       font-weight: 700;
+    }
+
+    span {
+      display: none;
+      font-size: 15px;
+      margin: 40px auto 0;
+      max-width: 685px;
+      text-align: right;
+      font-weight: 300;
+      text-transform: none;
+      letter-spacing: 3px;
+
+      &::before {
+        content: attr(data-text);
+        position: absolute;
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      @include media-query(s) {
+        display: block;
+      }
     }
   }
 

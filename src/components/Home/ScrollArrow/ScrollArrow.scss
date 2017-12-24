@@ -12,15 +12,7 @@
   width: 21px;
   height: 100px;
   z-index: 10;
-  opacity: 0;
   backface-visibility: hidden;
-  transform: translateY(20px);
-  transition: opacity 500ms ease, transform 700ms ease;
-
-  &--show {
-    opacity: 1;
-    transform: translateY(0);
-  }
 
   &:hover {
     .c-scroll-icon-line,
