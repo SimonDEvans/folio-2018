@@ -37,8 +37,8 @@ class Splash extends Component {
     let marginTop = -5
     let marginBottom = 0
 
-    // color update
-    let colourUpdate = 0
+    // start colour
+    let colourUpdate = 285
 
     function drawCanvas() {
       canvasElement = document.getElementById('canvas')

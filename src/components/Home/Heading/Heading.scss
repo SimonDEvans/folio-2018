@@ -43,6 +43,12 @@ $tilt-height: 100vh;
     text-align: center;
     color: $off-white-hover;
 
+    &::before {
+      content: attr(data-text);
+      position: absolute;
+      color: rgba(230, 230, 230, 0.85);
+    }
+
     @include media-query(s) {
       height: 34px;
       font-size: 80px;
@@ -64,7 +70,7 @@ $tilt-height: 100vh;
       &::before {
         content: attr(data-text);
         position: absolute;
-        color: rgba(255, 255, 255, 0.85);
+        color: rgba(230, 230, 230, 0.65);
       }
 
       @include media-query(s) {
